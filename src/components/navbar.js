@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import { Link } from 'react-router-dom';
+import './navbar.css';
 
-//Usar las margenes del 3er boton para darle margen a los otros botones
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -16,12 +17,12 @@ const Navbar = () => {
       </div>
       <div className={`w-full block overflow-hidden transition-transform duration-500 ease-in-out transform origin-top ${isOpen ? 'scale-y-100 h-auto' : 'scale-y-0 h-0'} lg:scale-y-100 lg:h-auto lg:flex lg:items-center lg:w-auto`}>
         <div className="text-sm lg:flex-grow lg:ml-12">
-          <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+          <Link to="/" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
             Inicio
-          </a>
-          <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+          </Link>
+          <Link to="/contacto" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
             Contacto
-          </a>
+          </Link>
           <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
             Skills
           </a>

@@ -1,41 +1,18 @@
 import React from "react";
-import Navbar from "./components/navbar";
-import Recuadro from "./components/inicio/recuadro";
-import "./app.css";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Contacto from "./components/contacto/contacto";
+import Inicio from "./components/inicio/inicio";
 
 function App() {
   return (
-    <div className="App bg-gradient-background min-h-screen">
-      <Navbar />
-      <h1 className="text-4xl text-center mt-6 font-bold text-green-500">
-        Hola, que me lleva la hola
-      </h1>
-      <div className="flex justify-between mt-12">
-        <Recuadro title="Acerca de mí">
-          Aquí va información sobre ti.
-          <br />Y aquí va más información en una nueva línea.
-        </Recuadro>
-        <Recuadro title="Acerca de mí" image="lupe.jpeg">
-        </Recuadro>
-      </div>
-      <h1 className="text-4xl text-center mt-12 font-bold text-green-500">
-        Proyectos
-      </h1>
-      <div className="flex justify-between mt-12">
-        <Recuadro title="Acerca de mí">
-          Aquí va información sobre ti.
-          <br />Y aquí va más información en una nueva línea.
-        </Recuadro>
-        <Recuadro title="Acerca de mí">
-          Aquí va información sobre ti.
-          <br />Y aquí va más información en una nueva línea.
-        </Recuadro>
-        <Recuadro title="Acerca de mí">
-          Aquí va información sobre ti.
-          <br />Y aquí va más información en una nueva línea.
-        </Recuadro>
-      </div>
-    </div>
+    <Router>
+      <>
+        <Routes>
+          <Route path="/" element={<Inicio />} />
+          <Route path="/contacto" element={<Contacto />} />
+        </Routes>
+      </>
+    </Router>
   );
 }
 
