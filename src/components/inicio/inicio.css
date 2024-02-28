@@ -2,3 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+.youtube-link {
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.youtube-link:hover {
+    color: darkgray;
+}
+
+.rounded-image-large {
+    border-radius: 50%;
+    height: 250px;
+}
+
+.rounded-image-small {
+    border-radius: 50%;
+    height: 50px;
+}

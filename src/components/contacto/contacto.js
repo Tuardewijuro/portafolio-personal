@@ -6,14 +6,9 @@ import './contacto.css';
 const Contacto = () => (
     <div className="min-h-screen bg-gradient-background flex flex-col">
         <Navbar />
-        <div className="flex-grow flex items-center justify-center">
-            <div className="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-center space-x-4">
-                <div>
-                    <div className="text-xl font-medium text-black">Contacto</div>
-                    <p className="text-gray-500">Aquí va la información de contacto.</p>
-                </div>
-            </div>
-        </div>
+        <h1 className="text-4xl text-center mt-6 font-bold text-green-500">
+            Contacto
+        </h1>
         <Footer />
     </div>
 );
