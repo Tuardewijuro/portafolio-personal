@@ -15,5 +15,11 @@
     -webkit-text-fill-color: transparent;
     animation: gradient 1500s linear infinite;
   }
+
+  #root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
   
   
