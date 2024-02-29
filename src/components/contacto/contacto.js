@@ -9,7 +9,7 @@ const Contacto = () => (
     <div className="flex flex-col min-h-screen bg-gradient-background">
         <Navbar />
         <div className="flex-grow flex flex-col items-center justify-center">
-            <Recuadro conBorde title="Contacto">
+            <Recuadro conBorde title="Contacto" style={{ fontSize: '30px' }}>
                 <div className="flex space-x-8 mt-6">
                     <a href="mailto:simonhincapie0@gmail.com" target="_blank" rel="noreferrer">
                         <FaEnvelope size={90} color="white" />
