@@ -25,7 +25,7 @@ const Inicio = () => {
             Universidad EIA, en Medellín, Colombia.
             <br />
             <br />
-            Pro player de tiempo completo the The Binding of Isaac: Repentance y
+            Pro player de tiempo completo de The Binding of Isaac: Repentance y
             Bloons TD 6.
             <br />
             <br />
