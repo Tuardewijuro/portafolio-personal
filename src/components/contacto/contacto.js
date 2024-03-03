@@ -19,8 +19,9 @@ const Contacto = () => {
       <Navbar />
       <CSSTransition in={showAnimation} timeout={300} classNames="my-node">
         <div className="flex-grow flex flex-col items-center justify-center">
-          <Recuadro conBorde title="Contacto" style={{ fontSize: "30px" }}>
-            <div className="flex space-x-8 mt-6">
+          <Recuadro conBorde title="Contacto" titleSize="text-2xl">
+            <div className="flex space-x-8">
+
               <a
                 href="mailto:simonhincapie0@gmail.com"
                 target="_blank"
