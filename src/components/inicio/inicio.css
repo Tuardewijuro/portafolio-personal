@@ -1,27 +1,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 
 .youtube-link {
-    text-decoration: underline;
-    transition: color 0.3s ease;
+  text-decoration: underline;
+  transition: color 0.3s ease;
 }
 
 .youtube-link:hover {
-    color: darkgray;
+  color: darkgray;
 }
 
 .rounded-image-large {
-    border-radius: 50%;
-    height: 250px;
+  border-radius: 50%;
+  height: 250px;
 }
 
 .rounded-image-small {
-    border-radius: 50%;
-    height: 50px;
+  border-radius: 50%;
+  height: 50px;
 }
 
-.image-small{
-    height: 50px;
+.image-small {
+  height: 50px;
+}
+
+.my-node-enter {
+  opacity: 0;
+}
+.my-node-enter-active {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+.my-node-exit {
+  opacity: 1;
+}
+.my-node-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
 }

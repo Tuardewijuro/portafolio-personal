@@ -1,17 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 
 @keyframes gradient {
-    0% { background-position: 0% 50%; }
-    100% { background-position: -30000% 50%; }
+  0% {
+    background-position: 0% 50%;
   }
-  
-  .title-gradient {
-    background: linear-gradient(to right, #257741, #1f931f, #33cc33, #1f931f, #257741);
-    background-size: 400% 100%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: gradient 1500s linear infinite;
+  100% {
+    background-position: -30000% 50%;
   }
+}
+
+.title-gradient {
+  background: linear-gradient(
+    to right,
+    #257741,
+    #1f931f,
+    #33cc33,
+    #1f931f,
+    #257741
+  );
+  background-size: 400% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 1500s linear infinite;
+}

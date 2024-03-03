@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Contacto from "./components/contacto/contacto";
 import Inicio from "./components/inicio/inicio";
 import Skills from "./components/skills/skills";
