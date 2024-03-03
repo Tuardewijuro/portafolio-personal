@@ -69,7 +69,7 @@ const Inicio = () => {
             El canal más increible de la historia.
             <br />
             Con la participación del Paju, LP, El buñu, El dexter, El magik,
-            cris y el resto de BYS
+            Cris y el resto de BYS
             <div
               style={{
                 display: "flex",
